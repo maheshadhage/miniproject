@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [miniprojectv1]">
+  <listeners>
+    <listener class-name="com.miniproject.utilities.reporting"/>
+  </listeners>
+  <test thread-count="5" name="miniprojectTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.miniproject.testcases.TC_DDF001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+          <include name="loginddt"/>
+        </methods>
+      </class> <!-- com.miniproject.testcases.TC_DDF001 -->
+    </classes>
+  </test> <!-- miniprojectTest(failed) -->
+</suite> <!-- Failed suite [miniprojectv1] -->
